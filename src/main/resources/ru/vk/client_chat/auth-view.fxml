@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="ru.vk.client_chat.controllers.SignController">
+    <tabs>
+        <Tab text="Sign In">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="loginField" layoutX="203.0" layoutY="83.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" layoutX="203.0" layoutY="185.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </PasswordField>
+                        <Label layoutX="102.0" layoutY="91.0" text="Login">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="185.0" text="Password">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Button layoutX="247.0" layoutY="264.0" mnemonicParsing="false" onAction="#singIn"
+                                text="Sign in">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Sign Up">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="loginReg" layoutX="234.0" layoutY="44.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </TextField>
+                        <Label layoutX="135.0" layoutY="52.0" text="Login">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Button layoutX="247.0" layoutY="278.0" mnemonicParsing="false" onAction="#signUp"
+                                text="Sign Up">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                        <TextField fx:id="passReg" layoutX="234.0" layoutY="127.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </TextField>
+                        <Label layoutX="95.0" layoutY="135.0" text="Password">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameReg" layoutX="234.0" layoutY="206.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </TextField>
+                        <Label layoutX="88.0" layoutY="214.0" text="Username">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
+
